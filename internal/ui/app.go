@@ -57,7 +57,7 @@ func (d itemDelegate) Render(w io.Writer, m list.Model, index int, listItem list
 	// Add active badge with proper spacing
 	if i.isActive {
 		// Calculate padding to align the badge
-		padding := 20 - len(name)
+		padding := 30 - len(name)
 		if padding < 2 {
 			padding = 2
 		}
