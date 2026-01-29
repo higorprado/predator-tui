@@ -11,7 +11,7 @@ import (
 func main() {
 	p := tea.NewProgram(ui.InitialModel(), tea.WithAltScreen())
 	if _, err := p.Run(); err != nil {
-		fmt.Printf("Erro ao iniciar TUI: %v\n", err)
+		fmt.Printf("Error starting TUI: %v\n", err)
 		os.Exit(1)
 	}
 }
